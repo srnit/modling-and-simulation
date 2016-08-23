@@ -1,0 +1,56 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include<graphics.h>
+int main()
+{
+    int sum,sum1,sum2,sum3,sum4,sum5;
+    int i,n,t1;
+    time_t t;
+    sum=sum1=sum2=sum3=sum4=sum5=0;
+    scanf("%d",&n);
+    srand((unsigned) time(&t));
+    for(i=1;i<=n;i++)
+    {
+        t1=rand()%6+1;
+        printf("%d\n",t1);
+        if(t1==1)
+            sum+=1;
+        else if(t1==2)
+            sum1+=1;
+        else if(t1==3)
+            sum2+=1;
+        else if(t1==4)
+            sum3+=1;
+        else if(t1==5)
+            sum4+=1;
+        else if(t1==6)
+            sum5+=1;
+
+
+    }
+    printf("%d\n%d\n%d\n%d\n%d\n%d",sum,sum1,sum2,sum3,sum4,sum5);
+
+int gd = DETECT, gm,j;
+
+   initgraph(&gd, &gm, NULL);
+   line(0,400,1000,400);
+
+
+   rectangle(100,400,150,(400-sum*3));
+   outtextxy(100,400,"1");
+   rectangle(180,400,230,(400-sum1*3));
+   outtextxy(180,400,"2");
+   rectangle(260,400,310,(400-sum2*3));
+   outtextxy(260,400,"3");
+   rectangle(340,400,390,(400-sum3*3));
+   outtextxy(340,400,"4");
+   rectangle(420,400,470,(400-sum3*3));
+   outtextxy(420,400,"5");
+   rectangle(500,400,550,(400-sum5*3));
+   outtextxy(500,400,"6");
+   //rectangle(5,400,1,-sum);
+   outtextxy(200,420," CREATED BY SUDHANSHU RAMAN:-simulation of dice problem");
+   delay(100000);
+   closegraph();
+}
