@@ -2,8 +2,8 @@
 using namespace std;
 int main()
 {
-int n,a[4000];
-int p[4000];
+int n,a[2000];
+int p[2000];
 cin>>n;
 for(int i=1;i<=n;i++)
 {

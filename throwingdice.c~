@@ -51,7 +51,7 @@ int gd = DETECT, gm,j;
    rectangle(500,400,550,(400-sum5*3));
    outtextxy(500,400,"6");
    //rectangle(5,400,1,-sum);
-  // outtextxy(200,420," CREATED BY:-SUDHANSHU RAMAN (simulation of dice problem)");
+   outtextxy(200,420," CREATED BY:-SUDHANSHU RAMAN (simulation of dice problem)");
    delay(100000);
    closegraph();
 }
